@@ -16,10 +16,10 @@ const FixedNavBar = ({title}) => {
         <div style={BODY_STYLE_NAVBAR}>
             <div style={SUB_BODY_NAVBAR}>
             <Link style={{height: "100%"}} to="/">
-                <img style={ {height: "100%", marginBottom: "0"}} src={require("../../content/assets/great.jpg")}></img>
+                <img style={ {height: "100%", marginBottom: "0"}} src="https://media-exp1.licdn.com/dms/image/C4E03AQFR_avttPWM2Q/profile-displayphoto-shrink_800_800/0?e=1605139200&v=beta&t=2Bbuiia8Fqn-THckvnV9y67tfLUKsFk6xpn5g1tOe-k"></img>
             </Link>
             <SubHeaderNavbar>
-            <span style={{height: "50px", fontSize: '50px'}} >{title}</span>
+            <span style={{height: "50px", fontSize: '40px'}} >{title}</span>
                 <div>
                     <ul style={{textDecoration: "none",
                         listStyleType: "none",
@@ -28,9 +28,8 @@ const FixedNavBar = ({title}) => {
                         marginBottom: "0"
                         }}>
                         <Link style={{textDecoration: "none"}} to="/blog"><li style={NAVBAR_ITEM}>Blogs</li></Link>
-                        <Link to="/"><li style={NAVBAR_ITEM}>Seminar</li></Link>
-                        <Link to="/"><li style={NAVBAR_ITEM}>Works</li></Link>
-                        <Link to="/"><li style={NAVBAR_ITEM}>Contact</li></Link>
+                        <Link to="/Work"><li style={NAVBAR_ITEM}>Works</li></Link>
+                        <Link to="/Contact"><li style={NAVBAR_ITEM}>Contact</li></Link>
                     </ul>
                 </div>
             </SubHeaderNavbar>
