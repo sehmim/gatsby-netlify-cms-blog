@@ -3,8 +3,8 @@ import { rhythm, scale } from "../utils/typography"
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+const FixedNavBar = ({title, data, navigate, location}) => {
 
-const FixedNavBar = ({title}) => {
     return (
         <Navbar>
             <div style={SUB_BODY_NAVBAR}>
