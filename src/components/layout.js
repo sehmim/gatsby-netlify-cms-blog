@@ -13,13 +13,14 @@ class Layout extends React.Component {
 
     return (
       <Wrapper>
-        <FixedNavBar title={title} />
+        <FixedNavBar title={title}/>
         <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
             maxWidth: rhythm(34),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            marginTop: "120px"
           }}
         >
           <main>{children}</main>

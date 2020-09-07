@@ -4,22 +4,16 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 
-const SubHeaderNavbar = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 10px 10px 0px 10px;
-    height: 100%;
-    justify-content: space-between;
-`
 const FixedNavBar = ({title}) => {
     return (
-        <div style={BODY_STYLE_NAVBAR}>
+        <Navbar>
             <div style={SUB_BODY_NAVBAR}>
-            <Link style={{height: "100%"}} to="/">
-                <img style={ {height: "100%", marginBottom: "0"}} src="https://media-exp1.licdn.com/dms/image/C4E03AQFR_avttPWM2Q/profile-displayphoto-shrink_800_800/0?e=1605139200&v=beta&t=2Bbuiia8Fqn-THckvnV9y67tfLUKsFk6xpn5g1tOe-k"></img>
+            <Link to="/">
+                <ImageTag style={ {height: "100%", marginBottom: "0"}} src={require("../../content/assets/relaunch_day.svg")}></ImageTag>
             </Link>
             <SubHeaderNavbar>
-            <span style={{height: "50px", fontSize: '40px'}} >{title}</span>
+
+                <Title >{title}</Title>
                 <div>
                     <ul style={{textDecoration: "none",
                         listStyleType: "none",
@@ -27,23 +21,55 @@ const FixedNavBar = ({title}) => {
                         flexDirection: "row",
                         marginBottom: "0"
                         }}>
-                        <Link style={{textDecoration: "none"}} to="/blog"><li style={NAVBAR_ITEM}>Blogs</li></Link>
-                        <Link to="/Work"><li style={NAVBAR_ITEM}>Works</li></Link>
-                        <Link to="/Contact"><li style={NAVBAR_ITEM}>Contact</li></Link>
+                        <Link style={{textDecoration: "none"}} to="/blog"><li style={NAVBAR_ITEM_1}>Blogs</li></Link>
+                        <Link to="/Contact"><li style={NAVBAR_ITEM_2}>Contact</li></Link>
                     </ul>
                 </div>
+
             </SubHeaderNavbar>
             </div>
-        </div>
+        </Navbar>
     )
 }
 export default FixedNavBar
 
+const Navbar = styled.div`
+    box-shadow: 0 2px 2px -2px grey;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    overflow: hidden;
+    top: 0;
+`
+
+const SubHeaderNavbar = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0px 30px;
+    height: 100%;
+    color: #000;
+    justify-content: space-between;
+`
+
+const ImageTag = styled.img`
+    height: 100%;
+    margin-bottom: 0px;
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+`
+
+const Title = styled.span`
+    height: 64px;
+    font-size: 40px;
+    color: #fafafa;
+`
 
 const BODY_STYLE_NAVBAR = {
     height: "120px",
     boxShadow: "0 2px 2px -2px grey",
     display: "flex",
+    position: "relative"
 }
 
 const SUB_BODY_NAVBAR = {
@@ -55,8 +81,14 @@ const SUB_BODY_NAVBAR = {
     alignItems: "center"
 }
 
-const NAVBAR_ITEM = {
-    textDecoration: "none",
-    marginBottom: "0",
+const NAVBAR_ITEM_1 = {
+    padding: "0px 15px 0px 0px",
+    color: "#999",
+
+}
+
+const NAVBAR_ITEM_2 = {
     padding: "0px 15px",
+    color: "#888",
+
 }

@@ -6,10 +6,11 @@ import SEO from "../components/seo"
 import Button from "../components/button"
 import Body from "../components/Body"
 import SimpleForm from "../components/Popup"
+import FixedNavBar from "../components/FixedNavBar"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Shadid Code Ez"
+    const siteTitle = "Shadid Haque"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -18,7 +19,7 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Body />
-        <SimpleForm />
+        {/* <SimpleForm /> */}
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blogs</Button>
         </Link>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Shadid Code Ez`,
+    title: `Shadid Haque`,
     author: `sehmim`,
     description: `Learn state of the art tech stacks in minutes`,
     siteUrl: `https://stoic-chandrasekhar-b1052f.netlify.app/`,
@@ -122,7 +122,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/shadid.jpeg`,
+        icon: `content/assets/relaunch_day.svg`,
       },
     },
     {
