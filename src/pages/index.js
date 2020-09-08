@@ -7,6 +7,7 @@ import Button from "../components/button"
 import Body from "../components/Body"
 import SimpleForm from "../components/Popup"
 import FixedNavBar from "../components/FixedNavBar"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class IndexPage extends React.Component {
   render() {
@@ -20,6 +21,9 @@ class IndexPage extends React.Component {
         />
         <Body />
         {/* <SimpleForm /> */}
+        <Link to="/blog/">
+          <Button marginTop="35px">Go to Blogs</Button>
+        </Link>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blogs</Button>
         </Link>

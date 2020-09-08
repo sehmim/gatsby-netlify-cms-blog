@@ -1,0 +1,99 @@
+a {
+    text-decoration: none !important;
+    box-shadow: none;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: (200px, auto);
+    grid-gap: 1em;
+    /* justify-items: stretch;
+    align-self: stretch; */
+}
+
+/* .wrapper > div {
+    border: 1px solid red;
+} */
+
+.wrapper > div:nth-child(odd){
+    background-color: #3333;
+}
+
+.box {
+    min-height: 200px;
+}
+
+.box1 { 
+    background-image: url("https://media.wired.com/photos/5e38b313e79643000919b415/master/pass/feature_mag-feature_art-space_food.jpg");
+}
+
+.box2 {
+    height: 200px;
+}
+
+.box2 > img {
+    height: 100px;
+}
+.box3 {
+    
+}
+.box4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: (100px, auto);
+    grid-gap: 1em;
+    justify-items: stretch;
+    align-self: stretch;
+}
+
+.box4 > div {
+    border: 1px solid red;
+}
+
+.box4 > div:nth-child(odd){
+    background-color: #3333;
+}
+
+.box5 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.box6 {
+    grid-column: 3/3;
+    grid-row: 2/4;
+}
+.box7 {
+    
+}
+
+.button-plus {
+    font-size: larger;
+    padding: 0px 20px;
+}
+
+.button {
+    padding: 10px;
+    margin: 10px 0px;
+    /* display: block; */
+    /* border: none; */
+    text-align: center;
+    /* box-sizing: border-box; */
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-letter-spacing: 2px;
+    -moz-letter-spacing: 2px;
+    -ms-letter-spacing: 2px;
+    letter-spacing: 2px;
+    background: black;
+    color: rgb(255,255,255);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.header {
+    margin-left: 10px;
+}
