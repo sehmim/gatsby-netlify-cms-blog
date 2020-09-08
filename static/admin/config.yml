@@ -26,3 +26,10 @@ collections:
         widget: "list"
         default: ["JavaScript"]
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        default: "content/assets/relaunch_day.svg"
+        media_library:
+          config:
+            multiple: true

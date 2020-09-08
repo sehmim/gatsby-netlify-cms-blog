@@ -11,9 +11,6 @@ a {
     align-self: stretch; */
 }
 
-/* .wrapper > div {
-    border: 1px solid red;
-} */
 
 .wrapper > div:nth-child(odd){
     background-color: #3333;
@@ -33,9 +30,11 @@ a {
 
 .box2 > img {
     height: 100px;
+    overflow: hidden;
 }
 .box3 {
-    
+    background-image: url("https://media.istockphoto.com/photos/red-mottled-abstract-background-picture-id910898290?k=6&m=910898290&s=612x612&w=0&h=qsaq3DeLD8lxE76tbR7DQVAPM44xFIGwzX49lR1SpfY=");    
+    text-align: center;
 }
 .box4 {
     display: grid;
@@ -57,13 +56,27 @@ a {
 .box5 {
     grid-column: 1/2;
     grid-row: 2/4;
+    background-image: url("https://media.wired.com/photos/5e38b313e79643000919b415/master/pass/feature_mag-feature_art-space_food.jpg");
+    background-size: cover;
 }
 .box6 {
     grid-column: 3/3;
     grid-row: 2/4;
+    background-image: url("https://www.jobmastermagnets.com/image/cache/data/magnet%20in%20outer%20space-940x300w.jpg");
 }
 .box7 {
-    
+    background-image: url("https://ichef.bbci.co.uk/news/1024/cpsprodpb/18388/production/_102980299_earth.gif");
+    background-size: cover;
+
+}
+.box8 {
+    background-image: url("");
+}
+.box9 {
+    background-image: url("https://media.wired.com/photos/5e38b313e79643000919b415/master/pass/feature_mag-feature_art-space_food.jpg");
+}
+.box10 {
+    background-image: url("https://media.wired.com/photos/5e38b313e79643000919b415/master/pass/feature_mag-feature_art-space_food.jpg");
 }
 
 .button-plus {
@@ -96,4 +109,52 @@ a {
 
 .header {
     margin-left: 10px;
+    color: white;
+    text-shadow: 1px 2px rgba(0,0,0,0.3)
+}
+
+.header2 {
+    margin: 50px 10px 10px 10px;
+    color: white;
+    text-shadow: 1px 2px rgba(0,0,0,0.3);
+    font-size: 30px;
+}
+
+.carousel-image {
+    max-height: 270px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;    
+    }   
+    .box2 {
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .carousel-image {
+        height: 200px;
+    }
+}
+
+.whats-new {
+    position: absolute;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 0, 0, 0.454);
+    border-radius: 0.6em;
+    color: rgba(255, 0, 0, 0.667);
+    align-self: center;
+    font-size: 0.5rem;
+    font-weight: 400;
+    padding: 0.2em 0.8em;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }

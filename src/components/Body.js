@@ -4,6 +4,7 @@ import { Carousel } from "react-bootstrap";
 
 import { Link } from "gatsby"
 import Button from './button';
+import CustomizedDialogs from './modal';
 
 
 function Body() {
@@ -11,7 +12,7 @@ function Body() {
         <div className="wrapper">
             <div className="box box1"><Box1></Box1></div>
             <div className="box box2"><ControlledCarousel/></div>
-            <div className="box box3">Box3</div>
+            <div className="box box3"><Box3></Box3></div>
             <div className="box box4">
                 <div>Box4a</div>
                 <div>Box4b</div>
@@ -52,8 +53,9 @@ function ControlledCarousel() {
     return (
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
+          <div className="whats-new">NEW BLOGS</div>
           <img
-            className="w-100"
+            className="carousel-image"
             src="https://i.stack.imgur.com/iJt2P.jpg"
             alt="First slide"
           />
@@ -66,8 +68,9 @@ function ControlledCarousel() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
+        <div className="whats-new">NEW BLOGS</div>
           <img
-            className="w-100"
+            className="carousel-image"
             src="https://cdnb.artstation.com/p/assets/images/images/023/323/497/large/michael-moes-bar-final-3.jpg?1578849365"
             alt="Second slide"
           />
@@ -80,9 +83,10 @@ function ControlledCarousel() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
+        <div className="whats-new">NEW BLOGS</div>
           <img
-            className="w-100"
-            src="https://cdn.pixabay.com/photo/2019/01/05/17/23/drawing-3915489_960_720.png"
+            className="carousel-image"
+            src="https://m0vie.files.wordpress.com/2017/09/ds9-tackingintothewind34.jpg?w=584"
             alt="Third slide"
           />
   
@@ -100,4 +104,13 @@ function ControlledCarousel() {
     );
   }
 
+
+const Box3 = () => {
+  return(
+    <div>
+      <h1 className="header2">Trending Topics <br></br>🔥🔥🔥</h1>
+      <CustomizedDialogs />
+    </div>
+  )
+}
 export default Body

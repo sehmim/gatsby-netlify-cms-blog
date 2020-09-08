@@ -40,6 +40,7 @@ const Navbar = styled.div`
     background-color: rgba(0,0,0,0.9);
     overflow: hidden;
     top: 0;
+    z-index: 1000;
 `
 
 const SubHeaderNavbar = styled.div`
@@ -63,13 +64,6 @@ const Title = styled.span`
     font-size: 40px;
     color: #fafafa;
 `
-
-const BODY_STYLE_NAVBAR = {
-    height: "120px",
-    boxShadow: "0 2px 2px -2px grey",
-    display: "flex",
-    position: "relative"
-}
 
 const SUB_BODY_NAVBAR = {
     display: "flex",
