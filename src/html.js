@@ -27,6 +27,7 @@ export default function HTML(props) {
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossOrigin="anonymous"
         />
+        <script data-ad-client="ca-pub-2461212440182417" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
