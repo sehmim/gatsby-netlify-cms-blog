@@ -28,7 +28,6 @@ class Layout extends React.Component {
         <Footer>
           © {new Date().getFullYear()}, Stovokor
           {` `} <br></br>
-          <a href="https://www.gatsbyjs.org">Github</a>
         </Footer>
       </Wrapper>
     )

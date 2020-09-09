@@ -45,12 +45,14 @@ a {
     align-self: stretch;
 }
 
-.box4 > div {
-    border: 1px solid red;
+.box4a {
+    background-image: url("../../content/assets/youtube.gif");
+    background-size: 230px 185px;
 }
 
-.box4 > div:nth-child(odd){
-    background-color: #3333;
+.box4b {
+    background-image: url("../../content/assets/twitch.jpg");
+    background-size: cover;
 }
 
 .box5 {
