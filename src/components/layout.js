@@ -26,7 +26,7 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Shadid Haque
+          © {new Date().getFullYear()}, Stovokor
           {` `} <br></br>
           <a href="https://www.gatsbyjs.org">Github</a>
         </Footer>

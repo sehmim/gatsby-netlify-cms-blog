@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Shadid Haque`,
+    title: `Stovokor`,
     author: `sehmim`,
     description: `Learn state of the art tech stacks in minutes`,
     siteUrl: `https://stoic-chandrasekhar-b1052f.netlify.app/`,

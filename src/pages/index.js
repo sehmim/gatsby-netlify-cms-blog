@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Shadid Haque"
+    const siteTitle = "Stovokor"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
