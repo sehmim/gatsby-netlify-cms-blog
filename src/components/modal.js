@@ -9,6 +9,8 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 
+import { trackCustomEvent, OutboundLink } from 'gatsby-plugin-google-analytics'
+
 const styles = (theme) => ({
   root: {
     margin: 0,
@@ -52,16 +54,29 @@ const DialogActions = withStyles((theme) => ({
 export default function CustomizedDialogs() {
   const [open, setOpen] = React.useState(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
   const handleClose = () => {
     setOpen(false);
   };
 
   return (
     <div>
-      <Button style={{color: "White", border: "1px solid white", margin: "0px 10px"}} variant="outlined" color="default" onClick={handleClickOpen}>
+      <Button style={{color: "White", border: "1px solid white", margin: "0px 10px"}} variant="outlined" color="default" 
+            onClick={e => {
+                // To stop the page reloading
+                e.preventDefault()
+                // Lets track that custom click
+                trackCustomEvent({
+                  // string - required - The object that was interacted with (e.g.video)
+                  category: "Special Button",
+                  // string - required - Type of interaction (e.g. 'play')
+                  action: "Click",
+                  // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+                  label: "Gatsby Plugin Example Campaign",
+                  // number - optional - Numeric value associated with the event. (e.g. A product ID)
+                  value: 43
+                })
+                setOpen(true);
+            }}>
         Open
       </Button>
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
@@ -71,30 +86,30 @@ export default function CustomizedDialogs() {
 
         <DialogContent dividers>
         <ul style={{listStyle: "none"}}>
-            <a href="https://dev.to/shadid12/5-dev-skills-that-will-boost-your-salary-in-2020-3i2k">
+            <OutboundLink href="https://dev.to/shadid12/5-dev-skills-that-will-boost-your-salary-in-2020-3i2k" target="_new">
                 <li>
                     <Typography gutterBottom>🎉 5 Dev skills that will boost your salary in 2020</Typography>
                 </li>
-            </a>
+            </OutboundLink>
 
-            <a href="https://medium.com/swlh/advanced-node-js-a-hands-on-guide-to-event-loop-child-process-and-worker-threads-in-node-js-e7c9019f9622">
+            <OutboundLink href="https://medium.com/swlh/advanced-node-js-a-hands-on-guide-to-event-loop-child-process-and-worker-threads-in-node-js-e7c9019f9622" target="_new">
                 <li>
                     <Typography gutterBottom>👀 Advanced Node.Js: A Hands on Guide to Event Loop, Child Process and Worker Threads in Node.Js</Typography>
                 </li>
-            </a>
+            </OutboundLink>
 
 
-            <a href="https://medium.com/@shadidhaque/being-a-software-developer-in-a-post-covid-19-world-845a0a09c33d">
+            <OutboundLink href="https://medium.com/@shadidhaque/being-a-software-developer-in-a-post-covid-19-world-845a0a09c33d" target="_new">
                 <li>
                     <Typography gutterBottom>🚀 Being a software developer in a post COVID-19 world</Typography>
                 </li>
-            </a>
+            </OutboundLink>
 
-            <a href="https://dev.to/shadid12/can-you-apply-solid-principles-to-your-react-applications-46il">
+            <OutboundLink href="https://dev.to/shadid12/can-you-apply-solid-principles-to-your-react-applications-46il" target="_new">
                 <li>
                     <Typography gutterBottom>🤔 SOLID principles to your React applications</Typography>
                 </li>
-            </a>
+            </OutboundLink>
 
 
         </ul>
