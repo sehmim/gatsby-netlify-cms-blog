@@ -118,7 +118,7 @@ function ControlledCarousel() {
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
             <Link to="/blog">
-            <button className="button"> Cheeckout</button>
+            <button className="button"> Checkout</button>
             </Link>
           </Carousel.Caption>
         </Carousel.Item>
