@@ -1,0 +1,12 @@
+.contribute-contents {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    border: dotted;
+}
+
+.contribute {
+    text-align: center;
+}
