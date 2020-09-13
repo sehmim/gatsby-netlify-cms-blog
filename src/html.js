@@ -4,8 +4,7 @@ import PropTypes from "prop-types"
 export default function HTML(props) {
 
   const ads = process.env.NODE_ENV === 'production' &&
-  <script data-ad-client="ca-pub-2461212440182417" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> ;
-
+<script data-ad-client="ca-pub-7887041725011896" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   return (
     <html {...props.htmlAttributes}>
       <head>
