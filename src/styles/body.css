@@ -46,25 +46,22 @@ a {
 }
 
 .box4a {
-    background-image: url("../../content/assets/youtube.gif");
-    background-size: 230px 185px;
+    background-image: url("../../content/assets/youtube.png");
+    background-size: cover;
 }
 
 .box4b {
-    background-image: url("../../content/assets/twitch.jpg");
+    background-image: url("../../content/assets/twitch.png");
     background-size: cover;
 }
 
 .box5 {
     grid-column: 1/2;
     grid-row: 2/4;
-    background-image: url("https://media.wired.com/photos/5e38b313e79643000919b415/master/pass/feature_mag-feature_art-space_food.jpg");
-    background-size: cover;
 }
 .box6 {
     grid-column: 3/3;
     grid-row: 2/4;
-    background-image: url("https://www.jobmastermagnets.com/image/cache/data/magnet%20in%20outer%20space-940x300w.jpg");
 }
 
 .box7 {

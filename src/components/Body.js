@@ -6,6 +6,8 @@ import { Link } from "gatsby"
 import Button from './button';
 import CustomizedDialogs from './modal';
 
+import AdSense from 'react-adsense';
+
 
 function Body() {
     return (
@@ -15,10 +17,30 @@ function Body() {
             <div className="box box3"><Box3></Box3></div>
             <div className="box box4">
                 <a href="https://www.youtube.com/" className="box4a"></a>
-                <a href="youtube.com" className="box4b"></a>
+                <a href="https://www.youtube.com" className="box4b"></a>
             </div>
-            <div className="box box5">Box5</div>
-            <div className="box box6">Box6</div>
+            <div className="box box5">
+              ADDS GO HERE
+              <AdSense.Google
+                client='ca-pub-7887041725011896'
+                slot='7806394673'
+                style={{ display: 'block' }}
+                format='auto'
+                responsive='true'
+                layoutKey='-gw-1+2a-9x+5c'
+              />
+            </div>
+            <div className="box box6">
+              ADDS GO HERE
+              <AdSense.Google
+                  client='ca-pub-7887041725011896'
+                  slot='7806394673'
+                  style={{ display: 'block' }}
+                  format='auto'
+                  responsive='true'
+                  layoutKey='-gw-1+2a-9x+5c'
+                />
+            </div>
             <div className="box box7">Box7</div>
             <div className="box box8">Box8</div>
             <div className="box box9">Box9</div>
